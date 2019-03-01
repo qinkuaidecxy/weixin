@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class='zhuye'>
+<image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+<button bindgetuserinfo="YesandNo" open-type='getUserInfo' style='display:{{inshow?"block":"none"}}'>点击获取</button>
+<text class='userName'>{{userInfo.nickName}}</text>
+<view catchtap='quehuan' class='goStudy'>
+<text>开始</text>
+</view>
+</view>

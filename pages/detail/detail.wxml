@@ -1,0 +1,24 @@
+<!--pages/detail/detail.wxml-->
+<view class='xqy'>
+<image class='datu' src='{{musics?dataobj.music.coverImgUrl:dataobj.detail_img}}'></image>
+<!-- <image wx:if="{{musics}}" class='music'  src="/images/music/music-start.png"></image>
+<image  wx:if="{{!musics}}"class='music' src="/images/music/music-stop.png"></image> -->
+<image catchtap='handlemusic' class='music' src='{{musics? "/images/music/music-start.png" : "/images/music/music-stop.png"}}'></image>
+<view class='avatar_date'>
+<image src='{{dataobj.avatar}}'></image>
+<text>{{dataobj.author}}</text>
+<text>发布于</text>
+<text>{{dataobj.date}}</text>
+</view>
+<text class='company'>{{dataobj.title}}</text>
+<view class='zhuangfa'>
+<view class='zhuangfa_img'>
+<image wx:if="{{!showandhide}}" catchtap='shoucan' src='/images/icon/collection-anti.png'> </image>
+<image wx:if="{{showandhide}}" catchtap='shoucan' src='/images/icon/collection.png'> </image>
+<image src='/images/icon/share.png'></image>
+</view>
+<view class="line"></view>
+</view>
+<button >转发此文章</button>
+<text class='content'>{{dataobj.detail_content}}</text>
+</view>

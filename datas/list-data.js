@@ -38,7 +38,8 @@ let list_data = [
     attention_count: 66,
     detail: '有魅力的老男人。',
     music: {
-      dataUrl: 'http://www.ytmp3.cn/down/50395.mp3', // 音乐链接
+      dataUrl: 'http://up.mcyt.net/down/46100.mp3', // 音乐链接
+      
       title: '一路向北',   // 音乐标题
       coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
     },

@@ -49,7 +49,7 @@ Page({
       },
       quehuan (){
         //点击切换list页面
-        wx.navigateTo({
+        wx.switchTab({
           url: "/pages/list/list"
         })
       },

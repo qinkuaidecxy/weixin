@@ -1,13 +1,34 @@
 {
   "pages": [
+    
+    "pages/index/index",
+    "pages/movies/movies",
     "pages/list/list",
     "pages/detail/detail",
-    "pages/index/index"
-    
+    "pages/movieDetail/movieDetail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#489B81",
     "navigationBarTitleText": "欢迎来到英雄联盟",
     "navigationBarTextStyle": "black"
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "文与字",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影频道",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      }
+    ]
   }
 }
